@@ -1,0 +1,7 @@
+<h1 class="bg-red-500">Book stores</h1>
+<% @book_stores.each do |book_store|%>
+<div>
+<h1><%= link_to book_store.title, book_store %></h1>
+<h3><%= book_store.body %></h3>
+</div>
+<% end %>
